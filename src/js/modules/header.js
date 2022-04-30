@@ -5,13 +5,13 @@ export default function () {
     // Открытие меню
 
     $('.menu__btn').on('click', function () {
-        $('.menu__list').toggleClass('menu__list--active');
+        $('.menu').toggleClass('menu--active');
         $('.menu__btn').toggleClass('menu__btn--close');
         $('body').toggleClass('overflow-hidden');
     });
 
     $('.menu__link').on('click', function () {
-        $('.menu__list').toggleClass('menu__list--active');
+        $('.menu').toggleClass('menu--active');
         $('.menu__btn').toggleClass('menu__btn--close');
         $('body').removeClass('overflow-hidden');
     });

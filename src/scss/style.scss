@@ -1,6 +1,6 @@
 @import "libs"; // Файлы стилей вендоров/плвгинов
 @import "vars"; // Переменные
-// @import "fonts"; // Подключение шрифтов
+@import "fonts"; // Подключение шрифтов
 @import "reset"; // Сброс стилей
 @import "global"; // Подключение глбальных стилей
 
@@ -9,6 +9,7 @@
 */
 
 //  Пример подключения стилей блоков
+@import "components/ibg";
 @import "components/container";
 @import "components/header";
 @import "components/menu";
@@ -20,3 +21,6 @@
 @import "components/title";
 @import "components/button";
 @import "components/form";
+@import "components/page";
+@import "components/main-screen";
+@import "components/content";

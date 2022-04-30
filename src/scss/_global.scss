@@ -10,9 +10,8 @@ body {
     height: 100%;
     width: 100%;
     background-color: $white;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
     font-size: $font-size-normal;
-    line-height: 19px;
     color: $text-main-color;
     display: flex;
     flex-direction: column;
@@ -27,13 +26,15 @@ body {
     overflow-x: hidden;
 }
 
+.wrapper {
+    overflow: hidden;
+    height: 100%;
+}
+
 main {
-    padding-top: 70px;
     flex-grow: 1;
 
-    @media #{$screen-mobile} {
-        padding-top: 90px;
-    }
+    @media #{$screen-mobile} {}
 }
 
 h1,

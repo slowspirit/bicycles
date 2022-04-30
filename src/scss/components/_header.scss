@@ -1,22 +1,31 @@
 .header {
     z-index: 99999;
-    position: fixed;
-    flex-shrink: 0;
-    left: 0;
-    right: 0;
-    background-color: lightskyblue;
-    box-shadow: 0px 2px 4px rgba($black, 0.1);
-    transition: all .3s;
+    position: absolute;
+    width: 100%;
+    top: 35px;
+
+    @media #{$screen-mobile} {
+        top: 15px;
+    }
 
     &__inner {
-        padding: 20px 0;
         display: flex;
+        justify-content: center;
         align-items: center;
+        height: 85px;
     }
 
-    &.out {
-        transform: translateY(-100%);
-        transition: all .3s;
+    &__logo {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
     }
+
+    // &.out {
+    //     transform: translateY(-100%);
+    //     transition: all .3s;
+    // }
 
 }
