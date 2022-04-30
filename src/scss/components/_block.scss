@@ -1,0 +1,27 @@
+.block {
+    text-align: center;
+
+    &__icon {
+        margin-bottom: 33px;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        color: $color-title;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: 3.6px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: $color-text;
+        line-height: 1.889;
+    }
+}

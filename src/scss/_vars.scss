@@ -1,6 +1,7 @@
 // Screen widths
 
-$screen-tablet: "(max-width: 1279px)";
+$screen-desktop: "(max-width: 1279px)";
+$screen-tablet: "(max-width: 921px)";
 $screen-mobile: "(max-width: 767px)";
 
 
@@ -10,6 +11,9 @@ $white: #ffffff;
 $black: #000000;
 
 $accent: rgb(77, 73, 89);
+$color-title: rgb(53, 55, 56);
+$color-text: rgb(132, 135, 137);
+$bg-color-section: #f7f7f7;
 
 //Fonts sizes
 

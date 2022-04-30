@@ -1,0 +1,12 @@
+.generation {
+    padding: 120px 0;
+    background-color: $bg-color-section;
+
+    @media #{$screen-desktop} {
+        padding: 80px 0;
+    }
+
+    @media #{$screen-tablet} {
+        padding: 30px 0;
+    }
+}
