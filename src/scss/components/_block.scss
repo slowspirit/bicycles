@@ -23,5 +23,25 @@
         font-size: 18px;
         color: $color-text;
         line-height: 1.889;
+
+        &--j {
+            text-align: justify;
+            font-size: 16px;
+            line-height: 30px;
+
+            &::after {
+                content: '';
+                display: block;
+                margin: 35px auto 0 auto;
+                background-color: rgba(53, 55, 56, 0.2);
+                width: 50px;
+                height: 1px;
+
+                @media (max-width:1500px) {
+                    margin: 15px auto 0 auto;
+                }
+
+            }
+        }
     }
 }

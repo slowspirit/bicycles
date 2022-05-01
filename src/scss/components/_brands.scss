@@ -1,0 +1,52 @@
+.brands {
+    &__row {
+        display: flex;
+
+        @media (max-width:1100px) {
+            flex-direction: column;
+        }
+    }
+
+    &__column {
+        flex: 0 1 33.3333%;
+
+        &--big {
+            flex: 0 1 66.6667%;
+        }
+    }
+
+    &__content {
+        padding: 75px 65px 55px 65px;
+        position: relative;
+
+        @media (max-width:1500px) {
+
+            padding: 40px 35px 30px 35px;
+
+        }
+
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            margin: 0 0 0 -10px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid $white;
+        }
+    }
+
+    &__image {
+        padding: 0 0 37.51% 0;
+    }
+
+
+
+
+
+}
