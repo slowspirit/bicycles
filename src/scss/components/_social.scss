@@ -1,0 +1,13 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media#{$screen-mobile} {
+        margin: 15px 0;
+    }
+
+    &__link {
+        margin: 0 7px;
+    }
+}

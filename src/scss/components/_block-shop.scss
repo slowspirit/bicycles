@@ -1,0 +1,24 @@
+.block-shop {
+    height: 100%;
+
+    &__row {
+        display: flex;
+    }
+
+    &__column {
+        flex: 0 1 50%;
+    }
+
+    &__item {
+        height: auto;
+        padding: 0 0 50% 0;
+
+        &--big {
+            padding: 0 0 200.5% 0;
+        }
+
+        &--small {
+            padding: 0 0 100% 0;
+        }
+    }
+}

@@ -1,6 +1,43 @@
 .footer {
-    height: 100px;
-    flex-shrink: 0;
-    background-color: lightskyblue;
-    padding: 10px 0;
+    background-color: $bg-color-section;
+    padding: 100px 0;
+
+    @media(max-width: 1100px) {
+        padding: 50px 0;
+    }
+
+    @media#{$screen-mobile} {
+        padding: 30px 0;
+    }
+
+
+    &__row {
+        display: flex;
+        align-items: center;
+
+        @media#{$screen-mobile} {
+            flex-direction: column;
+            text-align: center;
+        }
+
+    }
+
+    &__column {
+        flex: 0 1 33.3333%;
+    }
+
+    &__address {
+        color: $color-text;
+        font-size: 14px;
+        line-height: 18px;
+
+        p {
+            padding: 0;
+
+            &:first-child {
+                font-weight: 700;
+            }
+        }
+    }
+
 }

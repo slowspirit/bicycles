@@ -1,0 +1,13 @@
+.dev {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        font-style: italic;
+        color: $color-text;
+        padding-right: 9px;
+    }
+}
