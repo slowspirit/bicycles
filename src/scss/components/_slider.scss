@@ -1,0 +1,104 @@
+.slider {
+    padding: 120px 0 60px 0;
+    background-color: $bg-color-section;
+
+    @media #{$screen-mobile} {
+        padding: 60px 0 30px 0;
+    }
+
+    &__body {}
+
+    &__item {}
+
+    &__icon {
+        margin-bottom: 35px;
+        text-align: center;
+
+        img {
+            display: inline;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        color: $color-title;
+        line-height: 1.2;
+        letter-spacing: 1.5px;
+
+        @media #{$screen-mobile} {
+            font-size: 16px;
+        }
+
+        span {
+            font-weight: 300;
+            color: $color-text;
+
+            @media #{$screen-mobile} {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 24px;
+        color: $color-text;
+        font-style: italic;
+        line-height: 1.417;
+
+        @media #{$screen-mobile} {
+            font-size: 18px;
+        }
+    }
+
+    // SLICK-SLIDER SETTINGS
+
+    .slick-slider {
+        position: relative;
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .slick-dots {
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media #{$screen-mobile} {
+            padding-top: 50px;
+        }
+
+        li {
+            margin: 0 5px;
+
+            button {
+                cursor: pointer;
+                padding: 0;
+                font-size: 0;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                border: 1px solid #c8c8c8;
+                background-color: transparent;
+            }
+
+            &.slick-active {
+                button {
+                    border: 1px solid #a9afb3;
+                    background-color: #a9afb3;
+                }
+            }
+        }
+    }
+}
