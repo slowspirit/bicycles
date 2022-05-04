@@ -1,4 +1,3 @@
-@import "libs"; // Файлы стилей вендоров/плвгинов
 @import "vars"; // Переменные
 @import "fonts"; // Подключение шрифтов
 @import "reset"; // Сброс стилей
@@ -8,22 +7,14 @@
 * Components
 */
 
-//  Пример подключения стилей блоков
 @import "components/ibg";
 @import "components/container";
 @import "components/header";
 @import "components/menu";
 @import "components/footer";
-@import "components/breadcrumbs";
-@import "components/pagination";
-@import "components/accordion";
-@import "components/input-number";
-@import "components/title";
-@import "components/button";
-@import "components/form";
+
 @import "components/page";
 @import "components/main-screen";
-@import "components/content";
 @import "components/generation";
 @import "components/block";
 @import "components/brands";

@@ -7,7 +7,7 @@ export default function () {
         arrows: false,
         accessibility: false,
         slidesToShow: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         responsive: [

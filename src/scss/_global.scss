@@ -4,7 +4,6 @@ html {
 
 body {
     min-width: 320px;
-    // overflow-x: hidden;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -12,6 +11,7 @@ body {
     background-color: $white;
     font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
     font-size: $font-size-normal;
+    line-height: 19px;
     color: $text-main-color;
     display: flex;
     flex-direction: column;
@@ -21,11 +21,6 @@ body {
     overflow: hidden;
 }
 
-.wrapper-overflow-x {
-    position: relative;
-    overflow-x: hidden;
-}
-
 .wrapper {
     overflow: hidden;
     height: 100%;
@@ -33,19 +28,8 @@ body {
 
 main {
     flex-grow: 1;
-
-    @media #{$screen-mobile} {}
-}
-
-h1,
-h3 {
-    margin: 15px 0;
 }
 
 a {
     color: inherit;
-}
-
-p {
-    padding: 10px 0;
 }
